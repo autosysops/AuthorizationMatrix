@@ -36,8 +36,4 @@ $ModuleManifestData = @{
     PowerShellVersion    = [version]'5.1.0'
 }
 
-if (-not [string]::IsNullOrEmpty($env:GITVERSION_NUGETPRERELEASETAGV2)) {
-    $ModuleManifestData.Prerelease = $env:GITVERSION_NUGETPRERELEASETAGV2
-}
-
 New-ModuleManifest @ModuleManifestData
