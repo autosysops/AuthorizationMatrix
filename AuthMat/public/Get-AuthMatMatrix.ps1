@@ -1,16 +1,16 @@
 <#
     .SYNOPSIS
-        TODO
+        Get the Authorization Matrix data
     .DESCRIPTION
-        TODO
+        Retrieve an object containing a list of the roles used in azure with the principals assigned to these roles. Also includes a list of all principles which are assigned permissions.
     .PARAMETER Managementgroups
-        TODO
+        Filter on specific Managementgroups
     .PARAMETER Subscriptions
-        TODO
+        Filter on specific Subscriptions
     .PARAMETER Resourcegroups
-        TODO
+        Filter on specific Resourcegroups
     .EXAMPLE
-        TODO
+        $matrix = Get-AuthMatMatrix
 #>
 function Get-AuthMatMatrix {
 

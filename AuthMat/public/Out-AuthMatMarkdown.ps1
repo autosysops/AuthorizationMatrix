@@ -1,14 +1,14 @@
 <#
     .SYNOPSIS
-        TODO
+        Create a markdown file containing the authorization matrix
     .DESCRIPTION
-        TODO
+        Create a markdown file containing the authorization matrix
     .PARAMETER AuthMatrix
-        TODO
+        The Authorization Matrix data object
     .PARAMETER FilePath
-        TODO
+        The location where the file needs to be saved
     .EXAMPLE
-        TODO
+        Get-AuthMatMatrix | Out-AuthMatMarkdown -FilePath ".\matrix.md"
 #>
 function Out-AuthMatMarkdown {
 

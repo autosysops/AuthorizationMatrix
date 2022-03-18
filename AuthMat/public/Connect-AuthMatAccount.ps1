@@ -1,14 +1,16 @@
 <#
     .SYNOPSIS
-        TODO
+        Connect for the services used by the Authorization Matrix
     .DESCRIPTION
-        TODO
+        Connect for the services used by the Authorization Matrix
     .PARAMETER Token
-        TODO
+        Azure AccessToken when using he az module this can be retrieved by using (Get-AzAccessToken).Token
     .PARAMETER GraphToken
-        TODO
+        Azure Graph API AccessToken when using he az module this can be retrieved by using (Get-AzAccessToken -ResourceTypeName MSGraph).Token
     .EXAMPLE
-        TODO
+        $Token = (Get-AzAccessToken).Token
+        $GraphToken = (Get-AzAccessToken -ResourceTypeName MSGraph).Token
+        Connect-AuthMatAccount -Token $Token -GraphToken $GraphToken
 #>
 function Connect-AuthMatAccount {
 
