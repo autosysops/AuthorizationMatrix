@@ -40,8 +40,8 @@ function Connect-AuthMatAccount {
 
     # Get the current loggedin user
     try{
-        $me = Get-AuthMatMe
-        $me | Format-Table displayName, userPrincipalName, id
+        $domains = Get-AuthMatDomains
+        $domains | Format-Table isDefault, id
     }
     catch {
         $script:AccessToken = '';
